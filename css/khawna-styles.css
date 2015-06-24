@@ -351,7 +351,7 @@ background: url(../images/macicon.png) no-repeat;
   margin-top: -100px;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1168px) {
   header {
     max-height: 75px;
   }

@@ -26,7 +26,18 @@
 </head>
 <body > 
 
-<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <script>
+$(document).ready(function() {
+   $("#myCarousel").swiperight(function() {
+      $("#myCarousel").carousel('prev');
+    });
+   $("#myCarousel").swipeleft(function() {
+      $("#myCarousel").carousel('next');
+   });
+});
+</script>
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
   <ol class="carousel-indicators">
     <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
@@ -56,15 +67,18 @@
   </div>
 
   <!-- Controls -->
-  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
     <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
     <span class="sr-only">Previous</span>
   </a>
-  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
     <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
 </div>
+
+
+
 
 <!-- 3 key -->
 <div style="margin-left:20px;margin-right:20px; margin-top:40px;">
@@ -179,7 +193,7 @@
   </body>
 </main> <!-- cd-main-content -->
 
-
+<script src="js/jquery.mobile.custom.min.js"></script>  
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="bootstrap-3.1.1-dist/js/bootstrap.min.js"></script>
 <script src="js/modernizr.js"></script> <!-- Modernizr -->

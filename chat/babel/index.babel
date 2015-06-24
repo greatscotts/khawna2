@@ -148,15 +148,24 @@ $(document).ready(function() {
   messenger.onRecieve = buildRecieved;
 
   setTimeout(() => {
-    messenger.recieve('Hello there!');
+    messenger.recieve('Hello buyer');
   }, 1500);
 
   setTimeout(() => {
-    messenger.recieve('Do you like this? If so check out more on my page...');
+    messenger.recieve('Do you like what im selling?');
   }, 5000);
 
+   setTimeout(() => {
+    messenger.recieve('Do you like this? ');
+  }, 10000);
+
+ setTimeout(() => {
+    messenger.recieve('Buy this im going to give you a discount ');
+  }, 10000);
+
+
   setTimeout(() => {
-    messenger.recieve('Or maybe just give it a like!');
+    messenger.recieve('give me a call');
   }, 7500);
 
   $input.focus();

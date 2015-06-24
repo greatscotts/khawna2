@@ -181,16 +181,25 @@ $(document).ready(function () {
   messenger.onRecieve = buildRecieved;
 
   setTimeout(function () {
-    messenger.recieve('Hello there!');
+    messenger.recieve('Hello buyer');
   }, 1500);
 
   setTimeout(function () {
-    messenger.recieve('Do you like this? If so check out more on my page...');
+    messenger.recieve('Do you like this? If so check out more on my store');
   }, 5000);
 
   setTimeout(function () {
-    messenger.recieve('Or maybe just give it a like!');
-  }, 7500);
+    messenger.recieve('I can give you a discount');
+  }, 12500);
+
+   setTimeout(function () {
+    messenger.recieve('Buy 1 take 1');
+  }, 20500);
+
+
+   setTimeout(function () {
+    messenger.recieve('Buy mo na kuya plss');
+  }, 25500);
 
   $input.focus();
 

@@ -5,6 +5,7 @@
 <script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 <script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/jquery-ui.min.js"></script>
 <meta charset=utf-8 /><link href="bootstrap-3.1.1-dist/css/bootstrap.css" rel="stylesheet" media="screen">
+
 <title>JS Bin</title>
 <!--[if IE]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -33,9 +34,23 @@ function readURL(input) {
 </style>
 </head>
 <body>
+  <br><br>
   <div class="container">
   <center><span class="btn btn-default btn-file" style="background:url(images/imgthumb.png);width:200px;height:150px; ">
   <input type='file' onchange="readURL(this);" />
     <img id="blah" src="#" alt="your image" /></span>
+<br><br>
+    <input type="text" class="form-control" placeholder="What are you selling?" style="width:350px;"><br>
+   <select class="form-control" style="width:350px;"placeholder="Select category">
+  <option>Clothes</option>
+  <option>Shoes</option>
+  <option>Accessories</option>
+  <option>Service</option>
+ 
+</select><br>
+    <textarea class="form-control" rows="3" style="width:350px;"placeholder="Description"></textarea><Br>
+    <input type="text" class="form-control" placeholder="Price" style="width:350px;"><br>
+   
+  <a class="btn btn-warning" href="#" role="button">Sell your item now</a>
 </body>
 </html>

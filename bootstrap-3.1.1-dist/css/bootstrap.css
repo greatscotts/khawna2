@@ -2058,7 +2058,7 @@ fieldset[disabled] .btn {
 .btn-file input[type=file] {
     position: absolute;
     top: 0;
-    
+
     right: 0;
     min-width: 100%;
     min-height: 100%;
@@ -3547,6 +3547,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav-tabs > li.active > a:focus {
   color: #555;
   cursor: default;
+  height:70px;
+  paddin-top:25px;
   background-color: rgba(57, 42, 47, 0.07);
   border: 1px solid #ddd;
   border-bottom-color: transparent;

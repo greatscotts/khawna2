@@ -2154,9 +2154,11 @@ fieldset[disabled] .btn-primary.active {
   background-color: #fff;
 }
 .btn-success {
-  color: #fff;
-  background-color: #5cb85c;
-  border-color: #4cae4c;
+  color: black;
+  background-color: transparent;
+  border-color: black;
+ border-style: solid;
+    border-width: 1px;
 }
 .btn-success:hover,
 .btn-success:focus,

@@ -119,6 +119,13 @@ padding-top:9px;
 
 }
 
+#opacity{ 
+ 
+   opacity: 0.4;
+    filter: alpha(opacity=40); /* For IE8 and earlier */
+    
+}
+
 
 
 .color img{ 
@@ -421,7 +428,6 @@ body {
           user-select: none;
   width: 2.6rem;
 }
-
 
 
 
